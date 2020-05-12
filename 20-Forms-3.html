@@ -1,0 +1,159 @@
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta name="description" content="Html for beginners">
+        <title> Forms-3 </title>
+        <link rel="stylesheet" href="style.css">
+        <script>
+        function sayhello()
+            {
+
+                    alert("hello html")
+            }
+
+         </script>
+
+        <style>
+    
+            fieldset
+            {
+                background: #ffffff; padding: 10px; border:1 px solid#ccc;margin-bottom: 20px;
+            }
+        
+            legend
+            {
+                background: blue; border:1px solid#ccc; padding: 5px ;
+            }
+        </style>
+
+      
+    </head>
+
+
+    <body>
+        
+        <form name="Register" >
+
+            <!-- fieldset -->
+
+            <fieldset>
+                
+                <legend>
+                    Personal Data
+                </legend>
+
+                <!-- username -->
+
+                <label>username</label>
+                <input type="text" name="username" value="" placeholder="Type your Name" maxlength="10">
+
+                <br>
+                <!-- password -->
+                <label>Password</label>
+                <input type="password" name="password" placeholder="password">
+
+            </fieldset>
+
+            <br>
+
+
+            <fieldset>
+
+            
+                <legend>
+                   send Options
+                </legend>
+
+               
+
+
+                <!-- TextArea -->
+
+                <label> your Message</label>
+                <br>
+
+                <textarea class="textarea" rows="6" cols="60"  readonly> 
+                    Tell us Something About You
+                
+                </textarea>
+                
+
+
+                <br>
+                <label> upload ur Cv</label>
+                <input type="file" >
+
+
+                <br>
+
+                <!--Check box-->
+                <input type="checkbox">
+                <label>Remmber me</label>
+
+                <br>
+
+                <select name="time" size="1">
+
+                    
+
+                    <optgroup label="Near time">
+                        
+                        <option value="1">Now </option>
+                        <option value="2">Tommorrw</option>
+                        <option value="3">Next Week</option>
+                    </optgroup>
+                    
+                    <optgroup label="Far time">
+                        <option value="4"> after month</option>
+                        <option value="5">after year</option>
+                        <option value="6">after 10 year</option>
+
+                    </optgroup>
+                    
+
+                </select>
+
+
+         </fieldset>
+
+            <br>
+
+            <fieldset>
+
+                <legend>
+                    Your Devices Info
+                </legend>
+            
+                    <label> choose your browser </label> <br>
+
+                    <input type="radio" name="browser" value="chrome">Google Chrome <br>
+                    <input type="radio" name="browser" value="firefox">firefox <br>
+                    <input type="radio" name="browser" value="oper">opera <br>
+
+                    <label> choose your Mobile </label> <br>
+
+                    <input type="radio" name="Mobile" value="Samsung"> Samsung <br>
+                    <input type="radio" name="Mobile" value="Iphone">Iphone <br>
+                    <input type="radio" name="Mobile" value="Nokia">Nokia <br>
+
+
+                </fieldset>
+
+
+                <fieldset>
+
+                
+                    <br>
+                    <input type="button" name="say hello" value="say hello" onclick="sayhello()">
+
+                    <input type="submit" value="sign up">
+                    
+                    <input type="reset" value="restore defualt">
+
+                    <!-- <input type="image" src="http://placehold.it/100/100" alt="submit"> -->
+                </fieldset>
+            
+        </form>
+
+    </body>
+</html>

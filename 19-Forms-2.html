@@ -1,0 +1,75 @@
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta name="description" content="Html for beginners">
+        <title> Forms-2 </title>
+        <link rel="stylesheet" href="style.css">
+        <script>
+        function sayhello()
+            {
+
+                    alert("hello html")
+            }
+
+         </script>
+
+        <style>
+    
+        
+        </style>
+
+      
+    </head>
+
+
+    <body>
+        
+        <form name="Register" action="post.php" method="POST">
+            <label>username</label>
+            <input type="text" name="username" value="" placeholder="Type your Name" maxlength="10">
+
+            <br>
+
+            <label>Password</label>
+            <input type="password" name="password" placeholder="password">
+
+            <br>
+            <label> upload ur Cv</label>
+            <input type="file" >
+
+
+            <br>
+
+            <input type="checkbox">
+            <label>Remmber me</label>
+
+            <br>
+            <label> choose your browser </label> <br>
+
+            <input type="radio" name="browser" value="chrome">Google Chrome <br>
+            <input type="radio" name="browser" value="firefox">firefox <br>
+            <input type="radio" name="browser" value="oper">opera <br>
+
+            <label> choose your Mobile </label> <br>
+
+            <input type="radio" name="Mobile" value="Samsung"> Samsung <br>
+            <input type="radio" name="Mobile" value="Iphone">Iphone <br>
+            <input type="radio" name="Mobile" value="Nokia">Nokia <br>
+
+
+
+
+            <br>
+            <input type="button" name="say hello" value="say hello" onclick="sayhello()">
+
+            <input type="submit" value="sign up">
+            
+            <input type="reset" value="restore defualt">
+
+            <input type="image" src="http://placehold.it/100/100" alt="submit">
+
+
+        </form>
+
+    </body>
+</html>

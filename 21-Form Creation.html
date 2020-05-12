@@ -1,0 +1,165 @@
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta name="description" content="Html for beginners">
+        <title> Form Creatio </title>
+        <link rel="stylesheet" href="style.css">
+        <script>
+        
+
+         </script>
+
+        <style>
+
+            body
+            {
+              background: #efefef; font-family: Arial, Helvetica, sans-serif;  
+
+            }
+
+            fieldset
+            {
+                background: #fff;
+                border: 1px solid#ccc;
+                padding: 20px;
+                margin-bottom: 20px;
+                width: 500px;
+                margin: 20px auto;
+
+            }
+
+            legend
+            {
+                background: #fff;
+                border: 1px solid#ccc;
+                padding: 10px;
+
+            }
+
+
+            label
+            {
+                margin-bottom:10px ;
+                display: block;
+            }
+            input
+            {
+                margin-bottom:10px ;
+                
+            }
+            input[type="text"], input[type="password"] 
+            {
+                padding:5px ;
+                width: 300px;
+                display: block;
+            }
+
+            input[type=submit]
+            {
+                padding:10px ;
+                display: block;
+            }
+            hr
+            {
+                border: 1px solid#eee;
+            }
+
+            select
+            {
+                padding: 10px;
+            }
+
+            textarea
+            {
+                margin: 10px auto;
+               padding: 10px;
+               width: 400px;
+               height: 200;
+               
+            }
+        </style>
+
+      
+    </head>
+
+
+    <body>
+        
+        <form  name="Register">
+
+            <fieldset>
+                <legend>Personal Information</legend>
+
+                <label>username</label>
+                <input type="text" name="username" placeholder="Type you name">
+
+                <label>Password</label>
+                <input type="password" name="password" placeholder="password">
+
+                <label>E-Mail</label>
+                <input type="text" name="E-mail" placeholder="E-mail">
+
+                <label >Gender</label>
+                <select name="Gender">
+                    <option value="1">Male</option>
+                    <option value="2">Female</option>
+                </select>
+
+            </fieldset>
+
+
+            <fieldset>
+                
+                
+                <legend>Your Favourites</legend>
+                
+                <label>you favorite text editor</label>
+                
+                <input type="radio" name="editor" value="visual studio">visual studio<br>
+                <input type="radio" name="editor" value="xcode">xcode<br>
+                <input type="radio" name="editor" value="net beans">net beans<br>
+                <input type="radio" name="editor" value="notapad">notapad ++
+                
+            </fieldset>
+
+            <hr>
+
+            <fieldset>
+                
+                
+                
+                <label>You Favorite Browser</label>
+                
+                <input type="radio" name="editor" value="chrome">chrome<br>
+                <input type="radio" name="editor" value="mozilla">mozilla<br>
+                <input type="radio" name="editor" value="opera">opera<br>
+                <input type="radio" name="editor" value="safari">safari
+                
+            </fieldset>
+
+            <fieldset>
+                
+                
+                
+                <label>You Favorite Operating System</label>
+                
+                <input type="radio" name="os" value="Mac os">Mac os<br>
+                <input type="radio" name="os" value="linux">linux<br>
+                <input type="radio" name="os" value="windows">windows<br>
+                
+                
+            </fieldset>
+
+           
+            <fieldset>
+                <legend>Your Message</legend>
+                <textarea>
+
+                </textarea>
+                <input type="submit" value="Send Data">
+            </fieldset>
+            
+        </form>
+
+    </body>
+</html>
